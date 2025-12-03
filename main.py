@@ -16,7 +16,9 @@ app.add_middleware(
 )
 
 
-
+@app.get("/")
+def root():
+    return {"message": "Backend is running successfully!"}
 
 @app.get("/campaigns")
 def get_campaigns():
