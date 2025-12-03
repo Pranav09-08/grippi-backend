@@ -15,6 +15,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
+
+
 @app.get("/campaigns")
 def get_campaigns():
     db = SessionLocal()
